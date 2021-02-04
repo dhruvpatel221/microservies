@@ -1,0 +1,10 @@
+# foreman start -m gateway=1,user=3,timelines=3
+gateway: FLASK_APP=gateway flask run -p $PORT
+user: env FLASK_APP=user.py flask run -p $PORT
+timelines: env FLASK_APP=timelines.py flask run -p $PORT
+
+
+
+
+
+
